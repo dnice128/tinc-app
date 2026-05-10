@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tinc — Support</title>
+  <meta name="description" content="Support and help for Tinc, a photo-to-mesh-gradient card app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #F4F6F5;
+      --ink: #0E1A26;
+      --muted: #5C7080;
+      --rule: #DDE5E5;
+      --mint: #B4D4C9;
+      --sky: #7AB4D6;
+      --deep: #5A8AC0;
+      --accent: #2E4A6B;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.65;
+      padding: 64px 24px 96px;
+    }
+
+    .container {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .wordmark {
+      font-family: 'Cormorant Garamond', serif;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 32px;
+      letter-spacing: -0.01em;
+      margin-bottom: 80px;
+      background: linear-gradient(110deg, var(--mint) 0%, var(--sky) 55%, var(--deep) 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      width: fit-content;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: 88px;
+      line-height: 0.95;
+      letter-spacing: -0.025em;
+      margin-bottom: 28px;
+    }
+
+    h1 em {
+      font-style: italic;
+      font-weight: 400;
+      color: var(--deep);
+    }
+
+    .lede {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 400;
+      color: var(--muted);
+      line-height: 1.45;
+      margin-bottom: 64px;
+      max-width: 480px;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-style: italic;
+      font-size: 32px;
+      letter-spacing: -0.015em;
+      color: var(--accent);
+      margin-top: 56px;
+      margin-bottom: 14px;
+    }
+
+    p { margin-bottom: 14px; color: var(--ink); }
+
+    a {
+      color: var(--deep);
+      text-decoration: none;
+      border-bottom: 1px solid var(--mint);
+      transition: border-color 0.2s ease;
+    }
+
+    a:hover { border-bottom-color: var(--deep); }
+
+    .contact-block {
+      margin-top: 28px;
+      padding: 36px 0;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .contact-block .label {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--muted);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .contact-block .email {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 38px;
+      font-weight: 500;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+
+    .contact-block .email a {
+      border-bottom: none;
+    }
+
+    .contact-block .response {
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .faq dt {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 500;
+      font-size: 24px;
+      letter-spacing: -0.01em;
+      margin-top: 28px;
+      margin-bottom: 6px;
+    }
+
+    .faq dt:first-child { margin-top: 0; }
+
+    .faq dd { color: var(--muted); margin-bottom: 4px; }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 72px 0 28px;
+    }
+
+    footer {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    @media (max-width: 520px) {
+      body { padding: 48px 22px 72px; }
+      .wordmark { margin-bottom: 56px; font-size: 26px; }
+      h1 { font-size: 60px; }
+      .lede { font-size: 19px; margin-bottom: 48px; }
+      .contact-block .email { font-size: 28px; }
+      h2 { font-size: 26px; }
+      .faq dt { font-size: 21px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <div class="wordmark">tinc</div>
+
+    <h1>Hello, <em>need help?</em></h1>
+    <p class="lede">Tinc turns your photos into mesh-gradient cards. If something's not working — or you have an idea — reach out.</p>
+
+    <div class="contact-block">
+      <div class="label">Email</div>
+      <div class="email">
+        <a href="mailto:tinc.app.help@gmail.com">tinc.app.help@gmail.com</a>
+      </div>
+      <div class="response">Replies usually within 1–3 business days.</div>
+    </div>
+
+    <h2>Frequently asked</h2>
+    <dl class="faq">
+      <dt>Found a bug?</dt>
+      <dd>Email us with your device model and iOS version — we'll look into it.</dd>
+
+      <dt>Have a feature idea?</dt>
+      <dd>Send it our way. Feedback shapes what gets built next.</dd>
+
+      <dt>Can I export my cards?</dt>
+      <dd>Yes — tap the share icon on any card to save or send it.</dd>
+    </dl>
+
+    <h2>Privacy</h2>
+    <p>Tinc processes your photos on-device. We don't upload, store, or share your images. Read the full <a href="privacy.html">privacy policy</a>.</p>
+
+    <hr />
+    <footer>
+      <span>© 2026 Denise Huang</span>
+    </footer>
+  </main>
+</body>
+</html>
